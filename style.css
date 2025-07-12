@@ -1,0 +1,414 @@
+/* GERAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+body {
+    background-color: black;
+    height: 100vh;
+}
+.interface {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: white;
+}
+
+p { 
+    color: white;
+}
+
+span {
+    color: #cf1414;
+}
+
+/* CABEÇALHO */
+
+header {
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: rgb(126, 126, 126);
+    text-decoration: none;
+    display: inline-block;
+    transition: .3s;
+}
+
+header a:hover {
+    color: white;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav li {
+    display: inline-block;
+    padding: 0% 40px;
+}
+
+header .engvenctt button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #cf1414;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+header .engvenctt button:hover {
+    box-shadow: 0px 0px 8px #cf1414;
+}
+
+header img {
+    width: 90px;
+    height: 90px;
+}
+
+
+/* ASIDE */
+
+.inicio {
+    display: flex;
+    gap: 200px; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+aside {
+    color: white;
+}
+
+aside .slogan {
+    margin-top: 150px;
+    font-size: larger;
+}
+
+.slogan .ponto {
+    color: #cf1414;
+}
+
+aside .text{
+    margin: 20px 0;
+    font-size: small;
+}
+
+aside a {
+    display: inline-block;
+}
+
+aside .entrecontato button {
+    background-color: #cf1414;
+    border: 0;
+    border-radius:30px;
+    font-weight: 700;
+    padding: 10px 40px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+aside .entrecontato button:hover {
+    box-shadow: 0px 0px 8px #cf1414c8;
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+/* SECTION */
+
+.imagemalisson {
+
+    position: relative;
+}
+
+.imagemalisson img {
+    margin: 60px 0;
+    width: 200px; /* Ajuste conforme necessário */
+    height: auto;
+    border-radius: 10px; /* Para dar bordas arredondadas à foto */
+    box-shadow: 10px 10px 15px rgba(217, 12, 12, 0.637); /* Sombras */
+    background: rgba(187, 12, 12, 0.8); /* Fundo translúcido */
+    padding: 15px; /* Espaço entre a foto e o fundo */
+    animation: flutuar 2s ease-in-out infinite; /* Animação contínua de flutuação */
+    transition: box-shadow 0.3s ease;  /* Sombra suave */
+}
+
+@keyframes flutuar {
+    0% {
+      transform: translateY(0);  /* Posição original */
+    }
+    50% {
+      transform: translateY(-10px);  /* Flutua para cima */
+    }
+    100% {
+      transform: translateY(0);  /* Volta à posição original */
+    }
+  }
+
+
+    /* SECTION 2*/
+
+    .sectiondois {
+        margin: 80px auto;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;    
+        text-align: center;     
+      }
+      
+      .sectiondois h1 {
+        margin-bottom: 30px;     /* Espaço entre o h1 e a .espec */
+      }
+      
+      .sectiondois > .espec {
+        display: flex;
+        gap: 100px;              /* Espaço entre os itens dentro da .espec */
+      }
+      
+    
+      .projetos {
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;       /* Alinha tudo à esquerda do contâiner */
+        padding: 20px;
+        max-width: 600px;
+        transition: 0.3s;
+        text-align: left;
+      }
+      
+
+      .projetos:hover {
+        box-shadow: 0px 0px 12px #cf1414a4;
+        transform: scale(1.03);
+    } /* Propriedade geral para a transição */
+      
+
+      .projetos * {
+        transition: 0.3s;
+      }
+      
+
+      .projetos img {
+        width: 150px;
+        height: 150px;
+      }
+      
+      .projetos h3 {
+        color: white;
+      }
+
+      .projetos p {
+        font-size: small;
+        align-self: l;
+      }
+  /* article */
+
+  article {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  article > .apresentacao {
+    margin-left: 50px;
+  }
+  
+  .apresentacao * {
+    margin-bottom: 30px;
+  }
+
+ .apresentacao img {
+    border-radius: 50%;
+    margin-left: 5px;
+ }
+
+ .apresentacao img:hover {
+    box-shadow: 0px 0px 8px #cf1414c8;
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+.apresalisson {
+    border-radius: 30px ;
+    width: 600px;
+}
+
+/* PORTFOLIO */
+
+.portfolio {
+  margin: 80px auto;
+  padding: 80px 4%;
+  box-shadow: 0 0 40px 10px #ffffff18;
+  max-width: 2000px;
+}
+
+.portfolio h1 {
+  text-align: center;
+}
+
+.imgportfolio {
+  width: 360px;
+  height: 460px;
+  background-size: cover;
+  background-position: 100% 0%;
+  transition: 3s;
+  cursor: pointer;
+  border-radius: 40px;
+  position: relative;
+}
+
+.imgportfolio:hover{
+  background-position: 100% 100%;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  margin: 60px 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  background-color: rgba(0, 0, 0, 0.551);
+  color: #fff;
+  opacity: 0;
+  transition: .5s;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+ 
+/* FOOTER */
+
+footer {
+  padding: 30px;
+  max-width: 1200px;
+  margin: 40px auto;
+  gap: 200px;
+}
+
+footer img {
+    width: 90px;
+    height: 90px;
+}
+
+footer hr {
+  border-color: #cf1414;
+  margin: 15px 0;
+}
+
+.content{
+  margin: 0 30px;
+}
+
+
+
+@media screen and (max-width: 1020px) {
+
+  /* Cabeçalho */
+  .menu-desktop, .engvenctt {
+    display: none;
+  }
+  .inicio {
+    flex-direction: column-reverse;
+    gap: 40px;
+    padding: 0 5%;
+  }
+
+  .imagemalisson {
+    display: flex;
+    justify-content: center;
+  }
+
+  .imagemalisson img {
+    width: 60%;
+    max-width: 250px;
+  }
+
+  aside .slogan {
+    margin-top: 30px;
+    font-size: 1.2rem;
+  }
+
+  aside .text {
+    font-size: 0.95rem;
+  }
+
+  .sectiondois > .espec {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 0 5%;
+  }
+
+  .projetos {
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .projetos img {
+    width: 120px;
+    height: 120px;
+  }
+
+  article {
+    flex-direction: column;
+    padding: 0 5%;
+    gap: 30px;
+  }
+
+  .apresalisson {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .apresentacao {
+    margin-left: 0;
+  }
+
+  .flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .imgportfolio {
+    width: 90%;
+    height: auto;
+    aspect-ratio: 3/4;
+  }
+
+  footer {
+    text-align: center;
+    padding: 40px 5%;
+  }
+
+  footer img {
+    margin-bottom: 15px;
+  }
+}
